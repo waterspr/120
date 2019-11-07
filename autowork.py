@@ -114,7 +114,7 @@ for root, dirs, filess in os.walk(r'D:\1'):  #os.walk游历D:\1目录和文件�
 		file=os.path.join(root,i)
 		files.append(file)
 
-files.reverse()
+#files.reverse() #颠倒拼接顺序，reverse()列表排序
 for file in files:
 	output.Application.Selection.Range.InsertFile(file)#拼接文档
 #获取合并后文档的内容
