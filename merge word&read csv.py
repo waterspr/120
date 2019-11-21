@@ -109,7 +109,7 @@ import os
  
 #声明一个待合并的列表，注意是有序的列表
 files=[]
-for root, dirs, filess in os.walk(r'D:\1'):  #os.walk游历D:\1目录和文件夹
+for root, dirs, filess in os.walk(r'D:\2'):  #os.walk游历D:\1目录和文件夹
 	for i in filess:
 		file=os.path.join(root,i)
 		files.append(file)
@@ -121,5 +121,7 @@ for file in files:
 doc = output.Range(output.Content.Start, output.Content.End)
 # doc.Font.Name = "黑体"	#设置字体
  
-output.SaveAs(r'D:\meger.docx') #保存
+output.SaveAs(r'D:\meger1.docx') #保存
 output.Close()
+print('done!!')
+
