@@ -109,19 +109,19 @@ import os
  
 #声明一个待合并的列表，注意是有序的列表
 files=[]
-for root, dirs, filess in os.walk(r'D:\2'):  #os.walk游历D:\1目录和文件夹
+for root, dirs, filess in os.walk(r'e:\2'):  #os.walk游历D:\1目录和文件夹
 	for i in filess:
 		file=os.path.join(root,i)
 		files.append(file)
 
-#files.reverse() #颠倒拼接顺序，reverse()列表排序
+files.reverse() #颠倒拼接顺序，reverse()列表排序
 for file in files:
 	output.Application.Selection.Range.InsertFile(file)#拼接文档
 #获取合并后文档的内容
 doc = output.Range(output.Content.Start, output.Content.End)
 # doc.Font.Name = "黑体"	#设置字体
  
-output.SaveAs(r'D:\meger1.docx') #保存
+output.SaveAs(r'D:\meger2.docx') #保存
 output.Close()
 print('done!!')
 

@@ -1,6 +1,8 @@
 ph = "abc"
 print('excel文件名%s' % ph)
 
+
+'''
 from openpyxl import load_workbook
 import os
 from openpyxl import Workbook
@@ -19,7 +21,7 @@ for index, row in enumerate(sheet.rows):
          for item in row:   #  这个迭代无特殊情况 可简化一下
             print(item.value)
 
-
+'''
 
 
 
