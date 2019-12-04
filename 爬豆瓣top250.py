@@ -51,7 +51,6 @@ for i in range(10):
             continue 
 time.sleep(3)
 print('done!')
-    # print(rst1)
-   
+    
 
 
