@@ -121,7 +121,7 @@ for file in files:
 doc = output.Range(output.Content.Start, output.Content.End)
 # doc.Font.Name = "黑体"	#设置字体
  
-output.SaveAs(r'D:\meger2.docx') #保存
+output.SaveAs(r'D:\meger3.docx') #保存
 output.Close()
 print('done!!')
 
