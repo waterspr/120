@@ -46,7 +46,7 @@ for i in range(10):
             print(rst1[l],'    ',director[l][0],'     ',actor[l][0],'     ',other[l],'      ',rst3[l] )   # director和actor列表是嵌套的
             with open(r'D:\1\12345.txt', 'a+',encoding='utf-8') as f:
                 f.write('\n')  #空行
-                f.write(rst1[l] + '    '  + director[l][0] + '   ' + actor[l][0]+ '    '+ other[l] + rst3[l] +"\n")  #换行写入txt文件
+                f.write(rst1[l] + '    '  + director[l][0] + '   ' + actor[l][0]+ '    '+ other[l] + '    '  + rst3[l] +"\n")  #换行写入txt文件
         except :
             continue 
 time.sleep(3)
