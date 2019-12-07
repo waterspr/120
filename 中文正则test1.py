@@ -1,6 +1,5 @@
 import  re
 
-
 a= '导演:弗兰克·德拉邦特FrankDarabont主演:蒂姆·罗宾斯TimRobbins/...'
 b = "主演: 罗宾斯 Tim Robbins /..."
 # pat = "导演:([\u4e00-\u9fa5]+[·| /s][\u4e00-\u9fa5]+)"
